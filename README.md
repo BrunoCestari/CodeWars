@@ -8,6 +8,7 @@ continuously refining my efficiency using IntelliJ, Git and CodeWars to maximize
 
 ## Optimizations
 
+
 ## Lessons Learned
 
 Java Methods
@@ -68,6 +69,5 @@ Always remember to handle null conditions when working with methods that expect 
 - `stream(T[] array)`: Returns a sequential Stream with the elements of the specified array as its source.
 - `parallelStream(T[] array)`: Returns a possibly parallel Stream with the elements of the specified array as its source.
 
-Remember to explore each method's documentation for more details and examples.
 
     
