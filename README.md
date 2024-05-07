@@ -7,7 +7,8 @@ continuously refining my efficiency using IntelliJ, Git and CodeWars to maximize
 
 
 ## Optimizations
-
+- Learn about StringBuilder
+- Learn the ternary operator
 
 ## Lessons Learned
 
@@ -18,7 +19,6 @@ Always remember to handle null conditions when working with methods that expect 
 ### Integer Methods
 
 - `Integer.parseInt(String s)`: Converts a string representation of an integer to an integer value.
-- `numberString.replaceAll("[0-4]", "0").replaceAll("[5-9]", "1")`: Replaces digits 0-4 with 0 and digits 5-9 with 1 in a string.
 - `numberString.length()`: Returns the length of a string.
 - `numberString.charAt(int index)`: Returns the character at the specified index in a string.
 - `String[] cadena = numberString.split("")`: Splits a string into an array of strings.
@@ -51,10 +51,11 @@ Always remember to handle null conditions when working with methods that expect 
 - `isEmpty()`: Checks if the string is empty.
 - `equalsIgnoreCase(String anotherString)`: Compares two strings, ignoring case differences.
 - `toCharArray()`: Converts the string to a character array.
+- `numberString.replaceAll("[0-4]", "0").replaceAll("[5-9]", "1")`: Replaces digits 0-4 with 0 and digits 5-9 with 1 in a string.
 
 ### Array Methods
 
-- `length`: Returns the length of the array.
+- `length()`: Returns the length of the array.
 - `clone()`: Creates a shallow copy of the array.
 - `copyOf(int[] original, int newLength)`: Copies the specified array, truncating or padding with zeros (if necessary) to obtain the specified length.
 - `copyOfRange(int[] original, int from, int to)`: Copies the specified range of the specified array.
