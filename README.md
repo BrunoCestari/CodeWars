@@ -32,7 +32,7 @@ continuously refining my efficiency using IntelliJ, Git and CodeWars to maximize
 
 ### String Methods
 
-- Read about StringBuilder for dynamically building strings.
+- `replaceAll("(?i)[aeiou]" , "");`: Replaces each substring of this string that matches the given regular expression with the given replacement.
 - `charAt(int index)`: Returns the character at the specified index.
 - `length()`: Returns the length of the string.
 - `substring(int beginIndex)`: Returns a substring starting from the specified index.
