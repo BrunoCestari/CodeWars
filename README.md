@@ -12,10 +12,10 @@ continuously refining my efficiency using IntelliJ, Git and CodeWars to maximize
 
 ## Lessons Learned
 
-Java Methods
+### Observations
 
-Always remember to handle null conditions when working with methods that expect non-null parameters.
-
+- Always remember to handle null conditions when working with methods that expect non-null parameters.
+- Consider reverse iteration when the length and indices of object is changing
 ### Integer Methods
 
 - `Integer.parseInt(String s)`: Converts a string representation of an integer to an integer value.
