@@ -29,6 +29,7 @@ continuously refining my efficiency using IntelliJ, Git and CodeWars to maximize
 ### Character Methods
 
 - `Character.toUpperCase(char ch)`: Converts a character to uppercase.
+- `Character.GetNumericValue()`: don't work in negatives, spaces etc
 
 ### String Methods
 
