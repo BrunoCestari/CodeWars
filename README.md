@@ -54,9 +54,22 @@ continuously refining my efficiency using IntelliJ, Git and CodeWars to maximize
 - `toCharArray()`: Converts the string to a character array.
 - `numberString.replaceAll("[0-4]", "0").replaceAll("[5-9]", "1")`: Replaces digits 0-4 with 0 and digits 5-9 with 1 in a string.
 
+### StringBuilder Methods
+
+- **`append(String str)`**: Appends the specified string to the end of the character sequence.
+
+- **`insert(int offset, String str)`**: Inserts the specified string into the character sequence at the specified position.
+
+- **`delete(int start, int end)`**: Deletes the characters in a substring of this sequence.
+
+- **`reverse()`**: Causes this character sequence to be replaced by the reverse of the sequence.
+
+- **`toString()`**: Converts the contents of the StringBuilder to a String.
+
+
 ### Array Methods
 
-- `length()`: Returns the length of the array.
+- `length`: Returns the length of the array.
 - `clone()`: Creates a shallow copy of the array.
 - `copyOf(int[] original, int newLength)`: Copies the specified array, truncating or padding with zeros (if necessary) to obtain the specified length.
 - `copyOfRange(int[] original, int from, int to)`: Copies the specified range of the specified array.
