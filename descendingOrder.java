@@ -100,7 +100,6 @@ public class DescendingOrder {
 
 public class DescendingOrder {
 
-    //This solution uses Bubble Sort Algorithm
 
     public static int sortDesc(final int num) {
 
