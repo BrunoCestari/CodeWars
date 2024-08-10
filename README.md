@@ -2,13 +2,12 @@
 
 ## Overview
 
-This repository contains my CodeWars kata practice. I aim to complete at least one kata per day within an hour. I approach it like a speedrun,
-continuously refining my efficiency using IntelliJ, Git and CodeWars to maximize learning within this timeframe.
-
+This repository contains my CodeWars kata practice. I aim to complete at least one kata per day within an hour. 
 
 ## Optimizations
-- Learn about StringBuilder
 - Learn the ternary operator
+- Learn Hashmap
+- Learn regex
 
 ## Lessons Learned
 
@@ -18,18 +17,21 @@ continuously refining my efficiency using IntelliJ, Git and CodeWars to maximize
 - Consider reverse iteration when the length and indices of object is changing
 ### Integer Methods
 
-- `Integer.parseInt(String s)`: Converts a string representation of an integer to an integer value.
-- `numberString.length()`: Returns the length of a string.
-- `numberString.charAt(int index)`: Returns the character at the specified index in a string.
-- `String[] cadena = numberString.split("")`: Splits a string into an array of strings.
-- `StringUtils.join(String[] array)`: Joins elements of an array into a single string.
-- `string.equals(String anotherString)`: Compares two strings for equality.
-- `pin.matches("[0-9]{4}|[0-9]{6}")`: Checks if a string matches a pattern of either 4 or 6 digits.
+### Useful Integer Methods
+
+- `Integer.parseInt(String s)`: Converts a string (like `"123"`) to an `int` (like `123`) - primitive int.
+- `Integer.valueOf(String s)`: Creates an `Integer` object from a string (e.g., converts `"123"` to an `Integer`) 
+- `Integer.toString(int i)`: Converts an `int` (like `123`) to a string (like `"123"`).
+- `Integer.compare(int x, int y)`: Compares two `int` values. Returns:
+    - `0` if they are equal,
+    - A negative number if the first is less,
+    - A positive number if the first is greater.
+
 
 ### Character Methods
 
 - `Character.toUpperCase(char ch)`: Converts a character to uppercase.
-- `Character.GetNumericValue()`: don't work in negatives, spaces etc
+- `Character.GetNumericValue()`: don't work in negatives, spaces etc, use this to not get the ASCII value.
 
 ### String Methods
 
@@ -52,7 +54,6 @@ continuously refining my efficiency using IntelliJ, Git and CodeWars to maximize
 - `isEmpty()`: Checks if the string is empty.
 - `equalsIgnoreCase(String anotherString)`: Compares two strings, ignoring case differences.
 - `toCharArray()`: Converts the string to a character array.
-- `numberString.replaceAll("[0-4]", "0").replaceAll("[5-9]", "1")`: Replaces digits 0-4 with 0 and digits 5-9 with 1 in a string.
 
 ### StringBuilder Methods
 
