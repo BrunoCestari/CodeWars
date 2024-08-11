@@ -7,7 +7,10 @@ This repository contains my CodeWars kata practice. I aim to complete at least o
 ## Optimizations
 - Learn the ternary operator
 - Learn Hashmap
+- Learn ArrayList
+- Learn Treemap
 - Learn regex
+- Compare index limits in loops. E.g: length - 1 and length();
 
 ## Lessons Learned
 
