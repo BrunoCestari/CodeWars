@@ -9,6 +9,7 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - Improve regex skills
 - Compare index limits in loops (e.g., `length - 1` vs. `length()`)
 - Learn about time complexity
+- Learn the basic 5 sorting algorithms
 
 ## Lessons Learned
 
