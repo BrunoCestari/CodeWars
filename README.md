@@ -8,6 +8,7 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - Understand HashMap, ArrayList, and TreeMap
 - Improve regex skills
 - Compare index limits in loops (e.g., `length - 1` vs. `length()`)
+- Learn about time complexity
 
 ## Lessons Learned
 
@@ -26,6 +27,8 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - **`Character.getNumericValue(char ch)`**: Returns the numeric value of a character.
 
 ### String Methods
+- **`isEmpty()`**: Checks if the string is empty.
+- **`split(String regex)`**: Splits the string into an array of substrings based on the given regular expression.
 - **`replaceAll(String regex, String replacement)`**: Replaces each substring that matches the regex with the replacement.
 - **`charAt(int index)`**: Returns the character at the specified index.
 - **`length()`**: Returns the length of the string.
@@ -36,6 +39,7 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - **`toLowerCase()`**: Converts the string to lowercase.
 - **`toUpperCase()`**: Converts the string to uppercase.
 - **`trim()`**: Removes leading and trailing whitespaces.
+- **`toCharArray()`**: Converts the string to a character array.
 
 ## StringBuilder Methods
 - **`append(String str)`**: Appends the specified string to the character sequence.
