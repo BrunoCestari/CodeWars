@@ -13,9 +13,7 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 
 ## Lessons Learned
 
-### Key Points
-- Handle null conditions when methods expect non-null parameters.
-- Consider reverse iteration when length and indices of an object are changing.
+- Take care when checking (Reference or content? -> Consider using .equals() for string comparison)
 
 ### Integer Methods
 - **`Integer.parseInt(String s)`**: Converts a string to a primitive int.
@@ -63,9 +61,11 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - **`clear()`**: Removes all elements from the list.
 
 ## HashMap Methods
+
 - **`put(K key, V value)`**: Associates the value with the key.
 - **`get(Object key)`**: Returns the value associated with the key.
 - **`remove(Object key)`**: Removes the mapping for the key.
 - **`containsKey(Object key)`**: Checks if the map contains the key.
 - **`size()`**: Returns the number of key-value mappings.
 - **`clear()`**: Removes all mappings from the map.
+- **`getOrDefault(Object key, V defaultValue)`**: Returns the value associated with the key if it exists; otherwise, returns the `defaultValue`.
