@@ -13,7 +13,7 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 
 ## Lessons Learned
 
-- Take care when checking (Reference or content? -> Consider using .equals() for string comparison)
+- Take care when checking (Reference or content? -> Consider using `.equals()` for string comparison)
 
 ### Integer Methods
 - **`Integer.parseInt(String s)`**: Converts a string to a primitive int.
@@ -59,9 +59,9 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - **`get(int index)`**: Returns the element at the specified position.
 - **`size()`**: Returns the number of elements in the list.
 - **`clear()`**: Removes all elements from the list.
+- **`Collections.sort(List<T> list)`**: Sorts the elements of the list.
 
 ## HashMap Methods
-
 - **`put(K key, V value)`**: Associates the value with the key.
 - **`get(Object key)`**: Returns the value associated with the key.
 - **`remove(Object key)`**: Removes the mapping for the key.
@@ -69,3 +69,22 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - **`size()`**: Returns the number of key-value mappings.
 - **`clear()`**: Removes all mappings from the map.
 - **`getOrDefault(Object key, V defaultValue)`**: Returns the value associated with the key if it exists; otherwise, returns the `defaultValue`.
+
+## Choosing Data Structures and Sorting Methods
+
+- **Arrays vs. ArrayLists**:
+    - Use an **Array** when the size is fixed or known in advance, or when working with primitive types to avoid wrapper class overhead.
+    - Use an **ArrayList** when the size may change dynamically and for convenience with built-in methods.
+
+- **Sets**:
+    - Use a **HashSet** when you need a collection with no duplicates and fast access.
+    - Use a **TreeSet** when you need the elements sorted in natural order or by a custom comparator.
+
+- **Sorting Methods**:
+    - Use **`Collections.sort()`** to sort `ArrayList` or other `List` implementations.
+    - Use **`Arrays.sort()`** to sort arrays.
+    - For custom sorting logic, implement `Comparator` or `Comparable`.
+
+- **HashMap vs. TreeMap**:
+    - Use a **HashMap** for fast lookups when order doesn’t matter.
+    - Use a **TreeMap** when a sorted order of keys is required.
