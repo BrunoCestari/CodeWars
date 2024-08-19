@@ -22,7 +22,7 @@ Example
 
 import java.util.TreeSet;
 
-public class CountingDuplicates {
+ class CountingDuplicates {
     public static int duplicateCount(String text) {
 
         text = text.trim().toLowerCase();
