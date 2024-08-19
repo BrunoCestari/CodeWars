@@ -26,7 +26,7 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - **`Character.getNumericValue(char ch)`**: Returns the numeric value of a character.
 
 ### String Methods
-- **`isEmpty()`**: Checks if the string is empty.
+- **`isEmpty()`**: Checks if the string is empty. This don't check if the string is null
 - **`split(String regex)`**: Splits the string into an array of substrings based on the given regular expression.
 - **`replaceAll(String regex, String replacement)`**: Replaces each substring that matches the regex with the replacement.
 - **`charAt(int index)`**: Returns the character at the specified index.
@@ -61,14 +61,62 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - **`clear()`**: Removes all elements from the list.
 - **`Collections.sort(List<T> list)`**: Sorts the elements of the list.
 
+## LinkedList Methods
+- **`addFirst(E e)`**: Inserts the specified element at the beginning of the list.
+- **`addLast(E e)`**: Appends the specified element to the end of the list.
+- **`removeFirst()`**: Removes and returns the first element of the list.
+- **`removeLast()`**: Removes and returns the last element of the list.
+- **`getFirst()`**: Retrieves the first element of the list.
+- **`getLast()`**: Retrieves the last element of the list.
+
 ## HashMap Methods
 - **`put(K key, V value)`**: Associates the value with the key.
 - **`get(Object key)`**: Returns the value associated with the key.
 - **`remove(Object key)`**: Removes the mapping for the key.
 - **`containsKey(Object key)`**: Checks if the map contains the key.
-- **`size()`**: Returns the number of key-value mappings.
-- **`clear()`**: Removes all mappings from the map.
-- **`getOrDefault(Object key, V defaultValue)`**: Returns the value associated with the key if it exists; otherwise, returns the `defaultValue`.
+- **`containsValue(Object value)`**: Checks if the map contains the value.
+- **`size()`**: Returns the number of key-value pairs in the map.
+- **`clear()`**: Removes all key-value pairs from the map.
+- **`keySet()`**: Returns a `Set` view of the keys.
+- **`values()`**: Returns a `Collection` view of the values.
+
+## TreeMap Methods
+- **`put(K key, V value)`**: Associates the value with the key, maintaining sorted order.
+- **`get(Object key)`**: Returns the value associated with the key.
+- **`remove(Object key)`**: Removes the mapping for the key.
+- **`firstKey()`**: Returns the first key in the map.
+- **`lastKey()`**: Returns the last key in the map.
+
+## Set Methods
+
+- **HashSet**:
+    - **`add(E e)`**: Adds the specified element to the set.
+    - **`remove(Object o)`**: Removes the specified element from the set.
+    - **`contains(Object o)`**: Checks if the set contains the specified element.
+    - **`size()`**: Returns the number of elements in the set.
+    - **`clear()`**: Removes all elements from the set.
+
+- **TreeSet**:
+    - **`add(E e)`**: Adds the specified element to the set, maintaining sorted order.
+    - **`remove(Object o)`**: Removes the specified element from the set.
+    - **`contains(Object o)`**: Checks if the set contains the specified element.
+    - **`size()`**: Returns the number of elements in the set.
+    - **`clear()`**: Removes all elements from the set.
+    - **`first()`**: Returns the first (lowest) element.
+    - **`last()`**: Returns the last (highest) element.
+
+
+
+## Collections Methods
+
+- **`sort()`**: Sorts the list according to the specified comparator.
+
+- **`reverse()`**: Reverses the order of elements in the list.
+
+- **`copy()`**: Copies elements from the source list to the destination list. 
+
+
+
 
 ## Choosing Data Structures and Sorting Methods
 
