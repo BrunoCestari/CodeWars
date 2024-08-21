@@ -17,7 +17,7 @@ Example: for radius = 2 the result should be 13.
 import java.util.ArrayList;
 import java.util.HashSet;
 
-class Kata {
+class Kata2 {
     public static int pointsNumber(int radius) {
 
         ArrayList<int[]> arrayList = new ArrayList<>();
@@ -36,4 +36,16 @@ class Kata {
 }
 }
 
-
+//Way simple implmentation
+ class Kata {
+    public static int pointsNumber(int radius)
+    {
+        int count=0;
+        for (int x = -radius; x<= radius; x++){
+            for (int y = -radius; y<=radius; y++){
+                if (x*x+y*y<=radius*radius) count++;
+            }
+        }
+        return count;
+    }
+}
