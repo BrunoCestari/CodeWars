@@ -1,14 +1,17 @@
 /*
 
-https://www.codewars.com/kata/5b55c49d4a317adff500015f/train/java
+https://www.codewars.com/kata/55908aad6620c066bc00002a/java
 
-You have the radius of a circle with the center in point (0,0).
+DESCRIPTION:
+Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
 
-Write a function that calculates the number of points in the circle where (x,y) - the cartesian coordinates of the points - are integers.
+Examples input/output:
 
-Example: for radius = 2 the result should be 13.
-
-0 <= radius <= 1000
+XO("ooxx") => true
+XO("xooxx") => false
+XO("ooxXm") => true
+XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
+XO("zzoo") => false
 */
 
 //Solution
