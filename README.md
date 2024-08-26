@@ -25,8 +25,9 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - **`Character.toUpperCase(char ch)`**: Converts a character to uppercase.
 - **`Character.getNumericValue(char ch)`**: Returns the numeric value of a character.
 
+
 ### String Methods
-- **`isEmpty()`**: Checks if the string is empty. This don't check if the string is null
+- **`isEmpty()`**: Checks if the string is empty. This doesn't check if the string is null.
 - **`split(String regex)`**: Splits the string into an array of substrings based on the given regular expression.
 - **`replaceAll(String regex, String replacement)`**: Replaces each substring that matches the regex with the replacement.
 - **`charAt(int index)`**: Returns the character at the specified index.
@@ -39,6 +40,7 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - **`toUpperCase()`**: Converts the string to uppercase.
 - **`trim()`**: Removes leading and trailing whitespaces.
 - **`toCharArray()`**: Converts the string to a character array.
+- **`join(CharSequence delimiter, CharSequence... elements)`**: Joins the elements of the given array or iterable into a single `String`, with each element separated by the specified delimiter.
 
 ## StringBuilder Methods
 - **`append(String str)`**: Appends the specified string to the character sequence.
