@@ -17,7 +17,7 @@ Note that the Java version expects a return value of null for an empty string or
 //Solution
 
 
-public class JadenCase {
+ class JadenCase {
 
     public String toJadenCase(String phrase) {
         // TODO put your code below this comment
