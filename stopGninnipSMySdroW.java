@@ -16,16 +16,16 @@ Examples:
 public class SpinWords {
 
     public String spinWords(String sentence) {
+
         String[] sentenceArray = sentence.split(" ");
 
-        for(int i = 0; i < sentenceArray.length; i++){
-            if (sentenceArray[i].length() >= 5){
-            StringBuilder sb = new StringBuilder();
-            String reversedWord = sb.append(sentenceArray[i]).reverse().toString();
-            sentenceArray[i] = reversedWord;
+
+        for (int i = 0; i < sentenceArray.length; i++) {
+            if (sentenceArray[i].length() >= 5) {
+                sentenceArray[i] = new StringBuilder(sentenceArray[i]).reverse().toString();
             }
         }
-        String solution = String.join(" ", sentenceArray);
-        return solution;
+
+        return String.join(" ", sentenceArray);
     }
 }
