@@ -11,120 +11,21 @@ Input: 123456789 Output: 987654321
 
 //Solution
 
-
 import java.util.Arrays;
 
-
 public class DescendingOrder {
-
-    //This solution uses Bubble Sort Algorithm
 
     public static int sortDesc(final int num) {
 
         String numString = Integer.toString(num);
 
-        int[] digitArray =  new int[numString.length()];
-
-        //storing the values of each digit in the array
-
-        for (int i = 0; i < numString.length(); i++){
-            digitArray[i] = Character.getNumericValue(numString.charAt(i));
-        }
-
-        // sorting the array in descending order
-
-        for (int i = 0; i < digitArray.length - 1; i++) {
-            for (int j = 0; j < digitArray.length - 1 - i; j++) {
-                if (digitArray[j] < digitArray[j+1]) {
-                    // Swap elements
-                    int temp = digitArray[j];
-                    digitArray[j] = digitArray[j+1];
-                    digitArray[j+1] = temp;
-                }
-            }
-        }
-
-        StringBuilder solution = new StringBuilder();
-        for (int digit : digitArray){
-            solution.append(digit);
-        }
-        return Integer.parseInt(solution.toString());
-    }
-}
-
-
-//The above solution is brute force. I wasted to many time discovering it by myself.
-
-
-
-public class DescendingOrder {
-
-    //This solution uses Bubble Sort Algorithm
-
-    public static int sortDesc(final int num) {
-
-        String numString = Integer.toString(num);
-
-        int[] digitArray =  new int[numString.length()];
-
-        //storing the values of each digit in the array
-
-        for (int i = 0; i < numString.length(); i++){
-            digitArray[i] = Character.getNumericValue(numString.charAt(i));
-        }
-
-        // sorting the array in descending order
-
-        for (int i = 0; i < digitArray.length - 1; i++) {
-            for (int j = 0; j < digitArray.length - 1 - i; j++) {
-                if (digitArray[j] < digitArray[j+1]) {
-                    // Swap elements
-                    int temp = digitArray[j];
-                    digitArray[j] = digitArray[j+1];
-                    digitArray[j+1] = temp;
-                }
-            }
-        }
-
-        StringBuilder solution = new StringBuilder();
-        for (int digit : digitArray){
-            solution.append(digit);
-        }
-        return Integer.parseInt(solution.toString());
-    }
-}
-
-
-//Refactoring
-
-
-public class DescendingOrder {
-
-
-    public static int sortDesc(final int num) {
-
-        String numString = Integer.toString(num);
-
-        int[] digitArray =  new int[numString.length()];
-
-        //storing the values of each digit in the array
-
-        for (int i = 0; i < numString.length(); i++){
-            digitArray[i] = Character.getNumericValue(numString.charAt(i));
-        }
-
-        //Sort the array in descending order
+        char[] digitArray = numString.toCharArray();
 
         Arrays.sort(digitArray);
 
-        //Reverse it:
-        StringBuilder solution = new StringBuilder("");
-        for(int i = digitArray.length - 1;  i >=0; i--){
-            solution.append(digitArray[i]);
-        }
+        StringBuilder solution = new StringBuilder(new String(digitArray));
+        solution.reverse();
 
         return Integer.parseInt(solution.toString());
     }
 }
-
-
