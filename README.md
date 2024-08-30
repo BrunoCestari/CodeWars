@@ -41,6 +41,7 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - **`trim()`**: Removes leading and trailing whitespaces.
 - **`toCharArray()`**: Converts the string to a character array.
 - **`join(CharSequence delimiter, CharSequence... elements)`**: Joins the elements of the given array or iterable into a single `String`, with each element separated by the specified delimiter.
+- **`repeat(int count)`**: Returns a new string consisting of the original string repeated the specified number of times. (Available from Java 11 onwards)
 
 ## StringBuilder Methods
 - **`append(String str)`**: Appends the specified string to the character sequence.
