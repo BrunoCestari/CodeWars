@@ -110,7 +110,7 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 
 
 
-## Collections Methods
+### Collections Methods
 
 - **`sort()`**: Sorts the list according to the specified comparator.
 
