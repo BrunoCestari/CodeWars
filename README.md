@@ -43,20 +43,20 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - **`join(CharSequence delimiter, CharSequence... elements)`**: Joins the elements of the given array or iterable into a single `String`, with each element separated by the specified delimiter.
 - **`repeat(int count)`**: Returns a new string consisting of the original string repeated the specified number of times. (Available from Java 11 onwards)
 
-## StringBuilder Methods
+### StringBuilder Methods
 - **`append(String str)`**: Appends the specified string to the character sequence.
 - **`insert(int offset, String str)`**: Inserts the specified string at the specified position.
 - **`delete(int start, int end)`**: Deletes the characters in the specified range.
 - **`reverse()`**: Reverses the character sequence.
 - **`toString()`**: Converts the StringBuilder to a String.
 
-## Array Methods
+### Array Methods
 - **`length`**: Returns the length of the array.
 - **`sort(int[] a)`**: Sorts the array in ascending order.
 - **`binarySearch(int[] a, int key)`**: Searches for the specified value using binary search.
 - **`asList(T... a)`**: Returns a fixed-size list backed by the specified array.
 
-## ArrayList Methods
+### ArrayList Methods
 - **`add(E element)`**: Adds the element to the end of the list.
 - **`remove(int index)`**: Removes the element at the specified position.
 - **`get(int index)`**: Returns the element at the specified position.
@@ -64,7 +64,7 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - **`clear()`**: Removes all elements from the list.
 - **`Collections.sort(List<T> list)`**: Sorts the elements of the list.
 
-## LinkedList Methods
+### LinkedList Methods
 - **`addFirst(E e)`**: Inserts the specified element at the beginning of the list.
 - **`addLast(E e)`**: Appends the specified element to the end of the list.
 - **`removeFirst()`**: Removes and returns the first element of the list.
@@ -72,7 +72,7 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - **`getFirst()`**: Retrieves the first element of the list.
 - **`getLast()`**: Retrieves the last element of the list.
 
-## HashMap Methods
+### HashMap Methods
 - **`put(K key, V value)`**: Associates the value with the key.
 - **`get(Object key)`**: Returns the value associated with the key.
 - **`remove(Object key)`**: Removes the mapping for the key.
@@ -83,14 +83,14 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - **`keySet()`**: Returns a `Set` view of the keys.
 - **`values()`**: Returns a `Collection` view of the values.
 
-## TreeMap Methods
+### TreeMap Methods
 - **`put(K key, V value)`**: Associates the value with the key, maintaining sorted order.
 - **`get(Object key)`**: Returns the value associated with the key.
 - **`remove(Object key)`**: Removes the mapping for the key.
 - **`firstKey()`**: Returns the first key in the map.
 - **`lastKey()`**: Returns the last key in the map.
 
-## Set Methods
+### Set Methods
 
 - **HashSet**:
     - **`add(E e)`**: Adds the specified element to the set.
@@ -121,7 +121,7 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 
 
 
-## Choosing Data Structures and Sorting Methods
+### Choosing Data Structures and Sorting Methods
 
 - **Arrays vs. ArrayLists**:
     - Use an **Array** when the size is fixed or known in advance, or when working with primitive types to avoid wrapper class overhead.
