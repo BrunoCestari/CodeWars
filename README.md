@@ -21,6 +21,8 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - **`Integer.valueOf(String s)`**: Creates an `Integer` object from a string.
 - **`Integer.toString(int i)`**: Converts an int to a string.
 - **`Integer.compare(int x, int y)`**: Compares two int values.
+- **`Integer.min(int a, int b)`**: Returns the smaller of two int values.
+- **`Integer.max(int a, int b)`**: Returns the larger of two int values.
 
 ### Character Methods
 - **`Character.toUpperCase(char ch)`**: Converts a character to uppercase.
