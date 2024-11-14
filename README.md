@@ -30,9 +30,13 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 
 
 ### String Methods
+
+- **`equals(Object obj)`**: Checks if two strings are equal (case-sensitive).
+- **`equalsIgnoreCase(String anotherString)`**: Checks if two strings are equal (ignores case).
 - **`isEmpty()`**: Checks if the string is empty. This doesn't check if the string is null.
+- **`replace(char c, char o)`**: Replaces all occurrences of `c` with `o`.
+- **`replaceAll(String regex, String replacement)`**: Replaces each substring that matches the `regex` with the replacement.
 - **`split(String regex)`**: Splits the string into an array of substrings based on the given regular expression.
-- **`replaceAll(String regex, String replacement)`**: Replaces each substring that matches the regex with the replacement.
 - **`charAt(int index)`**: Returns the character at the specified index.
 - **`length()`**: Returns the length of the string.
 - **`substring(int beginIndex)`**: Returns a substring from the specified index.
