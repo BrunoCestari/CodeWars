@@ -49,6 +49,7 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - **`toCharArray()`**: Converts the string to a character array.
 - **`join(CharSequence delimiter, CharSequence... elements)`**: Joins the elements of the given array or iterable into a single `String`, with each element separated by the specified delimiter.
 - **`repeat(int count)`**: Returns a new string consisting of the original string repeated the specified number of times. (Available from Java 11 onwards)
+- **`String.format(String format, Object... args)`**: Returns a formatted string with placeholders replaced by argument. (e.g convert do hexadecimal base etc)
 
 ### StringBuilder Methods
 - **`append(String str)`**: Appends the specified string to the character sequence.
