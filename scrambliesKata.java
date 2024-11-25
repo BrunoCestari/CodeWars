@@ -18,12 +18,10 @@ scramble('katas', 'steak') ==> False
 
 
 import java.util.HashMap;
-import java.util.Set;
 
 class Scramblies {
 
-
-     private static HashMap<Character, Integer> getCharMap(String str) {
+     public static HashMap<Character, Integer> getCharMap(String str) {
          HashMap<Character, Integer> map = new HashMap<>();
          for(int i = 0; i < str.length(); i++){
              char c = str.charAt(i);
