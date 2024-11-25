@@ -1,86 +1,52 @@
-import java.util.ArrayList;
+/*
 
-class Snail {
+https://www.codewars.com/kata/55c04b4cc56a697bb0000048/train/java
+Complete the function scramble(str1, str2) that returns true if a portion of str1 characters can be rearranged to match str2, otherwise returns false.
 
-    public static int[] snail(int[][] array) {
+Notes:
 
-        int n = array.length;
-        ArrayList<Integer> sortedSolution = new ArrayList<>();
+Only lower case letters will be used (a-z). No punctuation or digits will be included.
+Performance needs to be considered.
+Examples
+scramble('rkqodlw', 'world') ==> True
+scramble('cedewaraaossoqqyt', 'codewars') ==> True
+scramble('katas', 'steak') ==> False
 
-        int r = 0;
-        int c = 0;
 
-        array[r][c] = -1; // Mark the starting point as visited
-        String direction = "right";
+*/
 
-        while (c >= 0 && r >= 0 && c < n && r < n) {
-            if (array[r][c] == -1) break; // Stop if the current cell is visited
-            sortedSolution.add(array[r][c]); // Add the current element to the solution
-            array[r][c] = -1; // Mark the current cell as visited
 
-            // Move and change direction if necessary
-            switch (direction) {
-                case "right":
-                    c++;
-                    if (c >= n || array[r][c] == -1) { // If we hit the boundary or a visited cell
-                        direction = "down";
-                        c--; // Move back
-                        r++; // Move down
-                    }
-                    break;
 
-                case "down":
-                    r++;
-                    if (r >= n || array[r][c] == -1) { // If we hit the boundary or a visited cell
-                        direction = "left";
-                        r--; // Move back
-                        c--; // Move left
-                    }
-                    break;
+import java.util.HashMap;
+import java.util.Set;
 
-                case "left":
-                    c--;
-                    if (c < 0 || array[r][c] == -1) { // If we hit the boundary or a visited cell
-                        direction = "up";
-                        c++; // Move back
-                        r--; // Move up
-                    }
-                    break;
+class Scramblies {
 
-                case "up":
-                    r--;
-                    if (r < 0 || array[r][c] == -1) { // If we hit the boundary or a visited cell
-                        direction = "right";
-                        r++; // Move back
-                        c++; // Move right
-                    }
-                    break;
 
-                default:
-                    direction = "Invalid Direction";
-            }
-        }
+     private static HashMap<Character, Integer> getCharMap(String str) {
+         HashMap<Character, Integer> map = new HashMap<>();
+         for(int i = 0; i < str.length(); i++){
+             char c = str.charAt(i);
+             if(map.containsKey(c)) continue;
+             map.put(c, str.replaceAll("[^" + c + "]", "").length());
+         }
+         return map;
+     }
 
-        // Convert the ArrayList to an int[] array
-        int[] solution = new int[sortedSolution.size()];
-        for (int i = 0; i < solution.length; i++) {
-            solution[i] = sortedSolution.get(i); // Fill the array with values from ArrayList
-        }
 
-        return solution;
-    }
+    public static boolean scramble(String str1, String str2) {
+        HashMap<Character, Integer> mapStr2 = getCharMap(str2);
+        HashMap<Character, Integer> mapStr1 = getCharMap(str1);
 
-    public static void main(String[] args) {
-        // Test with a simple array
-        int[][] array = {
-                {1, 2, 3},
-                {4, 5, 6},
-                {7, 8, 9}
-        };
 
-        int[] result = snail(array);
-        for (int num : result) {
-            System.out.print(num + " "); // Print the result
-        }
+
+       for(Character key : mapStr2.keySet() ){
+           if(!mapStr1.containsKey(key)) return false;
+           if(mapStr1.get(key)/mapStr2.get(key) < 1) return false;
+       }
+
+        return true;
     }
 }
+
+
