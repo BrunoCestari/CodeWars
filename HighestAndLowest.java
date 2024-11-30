@@ -14,7 +14,7 @@ Output string must be two numbers separated by a single space, and highest numbe
 
 //Solution
 
-public class Kata {
+class Kata {
     public static String highAndLow(String numbers) {
         // Code here or
         String[] numbersArrayString = numbers.split(" ");
