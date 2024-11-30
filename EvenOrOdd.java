@@ -5,7 +5,7 @@ Create a function that takes an integer as an argument and returns
 
 //Solution
 
-public class evenOrOdd {
+public class EvenOrOdd {
     public static String evenOrOdd(int number) {
             if(number  % 2 == 0){
                 return "Even";
