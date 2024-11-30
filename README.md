@@ -26,8 +26,14 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - **`Integer.max(int a, int b)`**: Returns the larger of two int values.
 
 ### Character Methods
-- **`Character.toUpperCase(char ch)`**: Converts a character to uppercase.
 - **`Character.getNumericValue(char ch)`**: Returns the numeric value of a character.
+- **`Character.toUpperCase(char ch)`**: Converts a character to uppercase.
+- **`Character.toLowerCase(char ch)`**: Converts a character to lowercase.
+- **`Character.isLetter(char ch)`**: Checks if the character is a letter (a-z or A-Z).
+- **`Character.isDigit(char ch)`**: Checks if the character is a digit (0-9).
+- **`Character.isUpperCase(char ch)`**: Checks if the character is uppercase.
+- **`Character.isLowerCase(char ch)`**: Checks if the character is lowercase.
+
 
 
 ### String Methods
