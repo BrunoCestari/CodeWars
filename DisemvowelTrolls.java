@@ -13,11 +13,47 @@ Note: for this kata y isn't considered a vowel.
 //Solution
 
 
+//Very fast solution
+ class Troll {
+    public static String disemvowel(String str) {
+        return str.replaceAll("(?i)[aeiou]", "");
+    }
+}
 
 
 
 
-public class Troll {
+
+
+
+//Refatored solution
+
+ class Troll {
+    public static String disemvowel(String str) {
+
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0 ; i < str.length(); i++){
+            char ch = str.charAt(i);
+            if (
+
+                    ch != 'a' && ch != 'e' && ch != 'i' &&  ch != 'o'
+                            &&  ch != 'u' &&  ch != 'A' && ch != 'E'
+                            && ch != 'I' &&  ch != 'O' &&  ch != 'U'
+            ){
+                sb.append(ch);
+            }
+        }
+
+
+        return  sb.toString();
+
+    }
+}
+
+
+
+
+ class Troll {
     public static String disemvowel(String str) {
 
         StringBuilder sb = new StringBuilder(str);
