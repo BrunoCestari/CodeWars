@@ -8,7 +8,7 @@ The input string will only consist of lower case letters and/or spaces.
 
 //Solution
 
-public class Vowels {
+public class VowelCount {
 
     public static int getCount(String str) {
         int count = 0;
