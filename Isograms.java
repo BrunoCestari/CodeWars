@@ -14,8 +14,42 @@ Example: (Input --> Output)
 
 //Solution
 
+import java.util.HashSet;
+import java.util.Set;
 
+
+//Refactor solution
 class isogram {
+    public static boolean isIsogram(String str) {
+        str = str.trim().toLowerCase();
+
+        if (str.isEmpty()) {
+            return true;
+        }
+
+        Set<Character> seenChars = new HashSet<>();
+
+        for (int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
+
+            if (seenChars.contains(c)) {
+                return false;
+            }
+
+            seenChars.add(c);
+        }
+
+        return true;
+    }
+}
+
+
+
+
+
+
+//old solution not efficient (nest loops)
+class Isogram1 {
     public static boolean  isIsogram(String str) {
         // ...
         str = str.trim().toLowerCase();
