@@ -21,13 +21,12 @@ import java.util.HashMap;
         StringBuilder sb = new StringBuilder();
 
         for (char c : array) {
-            if(!(c>='a' && c <= 'z') && !(c>= 'A' && c <= 'Z')) {
-                sb.append(c);
+            if(!Character.isLetter(c)) {
+                 sb.append(c);
                  continue;
             }
 
-            boolean isUpperCase = false;
-            if (Character.isUpperCase(c)) isUpperCase = true;
+            boolean isUpperCase = Character.isUpperCase(c);
 
             c = Character.toLowerCase(c);
 
@@ -40,16 +39,14 @@ import java.util.HashMap;
                 cypherValue = value + 13;
             }
 
-            if (isUpperCase) {
-                sb.append(Character.toUpperCase(alphabet.charAt(cypherValue)));
-
-            } else {
-                sb.append(alphabet.charAt(cypherValue));
-            }
-
-
-
+            sb.append(isUpperCase ?
+                    Character.toUpperCase(alphabet.charAt(cypherValue)) :
+                    alphabet.charAt(cypherValue));
         }
+
+
+
+
             return sb.toString();
     }
 
