@@ -176,3 +176,10 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - **`|`**: Acts as an OR operator, matching either the pattern before or after it.
 - **`()`**: Groups expressions together and captures them for backreferences.
 - **`[]`**: Denotes a character class that matches any one of the enclosed characters.
+
+
+### Math Tricks
+- **`%10`**: Get the last digit of a number.
+- **`/10`**: Remove the last digit of a number.
+- **`dr/dc`**: Create directional vectors for row (dr) and column (dc) changes. Use a variable dir to track the current direction.
+- **`%n`**: Use modulo n to cycle through values. For example, dir = (dir + 1) % 4 cycles through 4 directions.
