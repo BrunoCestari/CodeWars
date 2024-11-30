@@ -14,7 +14,8 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 
 ## Lessons Learned
 
-- Take care when checking (Reference or content? -> Consider using `.equals()` for string comparison)
+
+
 
 ### Integer Methods
 - **`Integer.parseInt(String s)`**: Converts a string to a primitive int.
@@ -147,3 +148,25 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - **HashMap vs. TreeMap**:
     - Use a **HashMap** for fast lookups when order doesn’t matter.
     - Use a **TreeMap** when a sorted order of keys is required.
+
+### Regex
+- **`[aeiou]`**: Matches any one of the characters in the set a, e, i, o, or u (case-sensitive).
+- **`[^aeiou]`**: Matches any character that is not a vowel (case-sensitive). The ^ negates the character class.
+- **`(?i)`**: Case-insensitive flag. Makes the regex pattern match letters in any case (e.g., a or A).
+- **`[a-e]`**: Matches any character in the range from a to e (inclusive).
+- **`\\d`**: Matches any digit (equivalent to [0-9]).
+- **`\\D`**: Matches any character that is not a digit (equivalent to [^0-9]).
+- **`\\w`**: Matches any word character (alphanumeric + underscore, equivalent to [a-zA-Z0-9_]).
+- **`\\W`**: Matches any non-word character (equivalent to [^a-zA-Z0-9_]).
+- **`\\s`**: Matches any whitespace character (spaces, tabs, line breaks).
+- **`\\S`**: Matches any non-whitespace character.
+- **`^`**: Matches the beginning of the string.
+- **`$`**: Matches the end of the string.
+- **`.`**: Matches any character except for line breaks (unless dotall flag is set).
+- **`*`**: Matches 0 or more occurrences of the preceding element.
+- **`+`**: Matches 1 or more occurrences of the preceding element.
+- **`?`**: Matches 0 or 1 occurrence of the preceding element.
+- **`{n,m}`**: Matches between n and m occurrences of the preceding element.
+- **`|`**: Acts as an OR operator, matching either the pattern before or after it.
+- **`()`**: Groups expressions together and captures them for backreferences.
+- **`[]`**: Denotes a character class that matches any one of the enclosed characters.
