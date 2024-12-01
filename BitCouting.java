@@ -8,7 +8,7 @@ Example: The binary representation of 1234 is 10011010010, so the function shoul
 //Solution
 
 
-public class BitCounting {
+class BitCounting {
 
     public static int countBits(int n){
         // Show me the code!
