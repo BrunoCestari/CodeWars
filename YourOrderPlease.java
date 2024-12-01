@@ -18,12 +18,10 @@ Examples
 
 // TreeMap way
 
-import java.util.ArrayList;
 import java.util.TreeMap;
 
-public class Order {
+class Order {
     public static String order(String words) {
-        //check if is empty string
         if (words.isEmpty()) {
             return "";
         }
@@ -49,17 +47,14 @@ public class Order {
 
 // A BETTER SOLUTION: ARRAY WAY
 
-public class Order {
+ class Order {
     public static String order(String words) {
-        // Check if the input string is empty
         if (words.isEmpty()) {
             return "";
         }
 
-        // Split the string into words
         String[] wordsArray = words.split(" ");
 
-        // Create a new array to hold the sorted words
         String[] sortedWords = new String[wordsArray.length];
 
         for (String word : wordsArray) {
