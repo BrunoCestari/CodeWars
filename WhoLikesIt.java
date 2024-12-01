@@ -18,21 +18,19 @@ class Solution {
     public static String whoLikesIt(String... names) {
         //Do your magic here
 
-        String solution = "";
 
         if (names == null || names.length == 0) {
-            solution = "no one likes this";
+            return "no one likes this";
         } else if (names.length == 1) {
-            solution = names[0] + " likes this";
+            return  names[0] + " likes this";
         } else if (names.length == 2) {
-            solution = names[0] + " and " + names[1] + " like this";
+            return names[0] + " and " + names[1] + " like this";
         } else if (names.length == 3) {
-            solution = names[0] + ", " + names[1] + " and " + names[2] + " like this";
+            return names[0] + ", " + names[1] + " and " + names[2] + " like this";
         }else{
-            solution =  names[0] + ", " + names[1] + " and " + Integer.toString(names.length - 2 ) + " others like this";
+            return names[0] + ", " + names[1] + " and " + Integer.toString(names.length - 2 ) + " others like this";
         }
 
-        return solution;
     }
 
 }
