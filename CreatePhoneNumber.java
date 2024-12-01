@@ -13,7 +13,7 @@ Don't forget the space after the closing parentheses!
 //Solution
 
 
-public class Kata {
+class Kata {
     public static String createPhoneNumber(int[] numbers) {
         StringBuilder sb = new StringBuilder();
         for (int i =0 ; i < numbers.length; i++){
