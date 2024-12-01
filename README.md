@@ -64,6 +64,7 @@ This repository contains my CodeWars kata solutions. My goal is to complete at l
 - **`delete(int start, int end)`**: Deletes the characters in the specified range.
 - **`reverse()`**: Reverses the character sequence.
 - **`toString()`**: Converts the StringBuilder to a String.
+- **`setCharAt(int index, char ch)`**: Replaces the character at the specified index with the given character.
 
 ### Array Methods
 - **`length`**: Returns the length of the array.
