@@ -27,34 +27,6 @@ class Order {
         }
 
         String[] wordsArray = words.split(" ");
-        TreeMap<Integer, String> treeMap = new TreeMap<>();
-        for (String word : wordsArray) {
-            String numberString = word.replaceAll("(?i)[^123456789]", "");
-            int number = Integer.parseInt(numberString);
-            treeMap.put(number, word);
-
-        }
-        StringBuilder sb = new StringBuilder();
-        for (int i = 1; i <= treeMap.size(); i++) {
-            sb.append(treeMap.get(i));
-            if (i < treeMap.size()) {
-                sb.append(" ");
-            }
-        }
-        return sb.toString();
-    }
-}
-
-// A BETTER SOLUTION: ARRAY WAY
-
- class Order {
-    public static String order(String words) {
-        if (words.isEmpty()) {
-            return "";
-        }
-
-        String[] wordsArray = words.split(" ");
-
         String[] sortedWords = new String[wordsArray.length];
 
         for (String word : wordsArray) {
@@ -62,18 +34,8 @@ class Order {
             sortedWords[number - 1] = word;
         }
 
-        StringBuilder sb = new StringBuilder();
-
-        for (int i = 0; i < sortedWords.length; i++) {
-            sb.append(sortedWords[i]);
-            // Append a space only if it's not the last element
-            if (i < sortedWords.length - 1) {
-                sb.append(" ");
-            }
-        }
-        return sb.toString();
+        return String.join(" ", sortedWords);
     }
 }
-
 
 
