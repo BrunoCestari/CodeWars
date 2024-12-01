@@ -12,8 +12,7 @@ Courtesy of projecteuler.net (Problem 1)
 
 
 
-public class Solution {
-
+class Solution {
     public int solution(int number) {
         int sum = 0;
         for (int i = 0; i < number; i++){
