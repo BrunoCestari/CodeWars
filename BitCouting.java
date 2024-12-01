@@ -14,10 +14,8 @@ class BitCounting {
         // Show me the code!
         String binaryString = Integer.toBinaryString(n);
         int sum = 0;
-        for (int i = 0; i < binaryString.length(); i++){
-            char ch = binaryString.charAt(i);
-            int numericValue = Character.getNumericValue(ch);
-            sum += numericValue;
+        for (char ch : binaryString.toCharArray()){
+            sum += Character.getNumericValue(ch);
         }
         return sum;
     }
