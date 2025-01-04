@@ -17,17 +17,8 @@ Create a function that returns the sum of the two lowest positive numbers given 
  // Solution
 
 
-import java.nio.file.attribute.UserDefinedFileAttributeView;
-import java.util.Arrays;
-
-import java.util.Arrays;
 // Solution
 
-
-import java.nio.file.attribute.UserDefinedFileAttributeView;
-import java.util.Arrays;
-
-import java.util.Arrays;
 class Kata{
     public static long sumTwoSmallestNumbers(final long [] numbers) {
         //Your solution here
