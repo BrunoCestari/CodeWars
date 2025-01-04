@@ -1,4 +1,4 @@
-# CodeWars Practice <a target="_blank" href="https://www.codewars.com/users/BCestari" >Visit Here</a>
+# CodeWars Practice: <a target="_blank" href="https://www.codewars.com/users/BCestari" >Visit Here</a>
 
 ![alt tag](https://github.com/user-attachments/assets/97df02be-b508-4602-afb3-12bbb06880b2)
 ![alt tag](https://github.com/user-attachments/assets/d9328795-6355-46c2-8226-1f5a393f9795)
