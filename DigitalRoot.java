@@ -1,4 +1,8 @@
 /*
+
+https://www.codewars.com/kata/541c8630095125aba6000c00
+
+
 Digital root is the recursive sum of all the digits in a number.
 
 Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing in this way until a single-digit number is produced. The input will be a non-negative integer.
@@ -16,15 +20,14 @@ Examples
 
 public class DRoot {
     public static int digital_root(int n) {
-        int sum = n;
 
-        while (sum >= 10) {
+        while (n >= 10) {
             // Reset sum for the new calculation
             int newSum = 0;
 
             // Convert sum to string and get its digits
-            String numberString = Integer.toString(sum);
-            char[] arr = numberString.toCharArray();
+            String nString = Integer.toString(n);
+            char[] arr = nString.toCharArray();
 
             // Sum the digits
             for (char c : arr) {
@@ -32,9 +35,9 @@ public class DRoot {
             }
 
 
-            sum = newSum;
+            n = newSum;
         }
 
-        return sum;
+        return n;
     }
 }
