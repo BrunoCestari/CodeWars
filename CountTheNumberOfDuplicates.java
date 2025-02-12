@@ -3,7 +3,8 @@ https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/java
 
 DESCRIPTION:
 Count the number of Duplicates
-Write a function that will return the count of distinct case-insensitive alphabetic characters and numeric digits that occur more than once in the input string. The input string can be assumed to contain only alphabets (both uppercase and lowercase) and numeric digits.
+Write a function that will return the count of distinct case-insensitive alphabetic characters and numeric digits that occur more
+than once in the input string. The input string can be assumed to contain only alphabets (both uppercase and lowercase) and numeric digits.
 
 Example
 "abcde" -> 0 # no characters repeats more than once
@@ -42,7 +43,7 @@ import java.util.TreeSet;
                 }
             if(count > 1){
                 sb.append(c);
-
+                break;
             }
         }
         //Using a Treeset to get no duplicates
