@@ -26,8 +26,7 @@ public class Maskify {
 
         StringBuilder sb = new StringBuilder(str);
 
-        sb.replace(0, str.length() -4, "#".repeat(str.length() -4 ) ).toString();
-
+        sb.replace(0, str.length() -4, "#".repeat(str.length() -4 ) );
 
         return sb.toString();
     }
