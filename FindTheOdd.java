@@ -20,14 +20,11 @@ public class FindOdd {
             int count = 0;
 
             for (int j = 0; j < a.length; j++) {
-                if (a[i] == a[j]) {
-                    count++;
-                }
+                if (a[i] == a[j]) count++;
             }
 
-            if (count % 2 != 0) {
-                return a[i];
-            }
+            if (count % 2 != 0) return a[i];
+
         }
 
         return 0;
