@@ -16,7 +16,6 @@ Example
 "ABBA" -> 2 # 'A' and 'B' each occur twice
 
 
-
 */
 
 //Solution
@@ -43,7 +42,6 @@ import java.util.TreeSet;
                 }
             if(count > 1){
                 sb.append(c);
-                break;
             }
         }
         //Using a Treeset to get no duplicates
